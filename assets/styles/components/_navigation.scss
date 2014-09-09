@@ -1,0 +1,65 @@
+/* ******************
+NAVIGATION STYLES
+******************* */
+// p b s t
+
+.navigation { 
+	background: $blue-background;
+	position: relative;
+	padding: 2%;
+	overflow: hidden;
+	width: 100%;
+	color: #fff; 
+}
+
+.logo { 
+	display: none;
+	float: left; 
+	max-height: 50px;
+	font-family: $bitter;
+	font-size: 24px;
+	font-weight: $bitter-bold;
+	
+	img { max-width: 100%; }
+}
+
+nav { 
+	//float: right;
+	padding: 10px 0;
+	max-heght: 50px;
+	font-size: 1.25em;
+	text-align: center 
+}
+
+nav ul { 
+  margin: 0 10px;
+  padding: 0;  
+  list-style: none;
+	
+	li { display: inline-block; } 
+}
+
+nav a {
+	padding: 10px 0;
+	color: $light-text;
+	font-weight: $openSans-semi-bold; 
+}
+
+nav a:hover { color: $nav-link-hover; }
+
+// MEDIA QUERIES FOR HEADER
+// Tablet + Desktop
+@media #{ $break-480 } {
+	.logo { display: block; }
+
+	.navigation { 
+		position: fixed;
+		top: 0;
+		background: none; 
+	} 
+
+	nav { 
+		padding: 5px 0;
+		float: right;
+  }
+}

@@ -1,0 +1,25 @@
+/* ******************
+GALLERY STYLES
+******************* */
+// p b s t
+
+ .gallery article { 
+	float: left;
+	margin: 2.5%;
+	background: #e1e1e1;
+	@include border-radius(5px);
+	list-style: none;
+	width: 45%;
+
+	a { color: $body-copy; }
+ }
+
+.gallery img { 
+	border-radius: 5px 5px 0 0;
+	width: 100%; 
+}
+
+.caption { 
+	padding: 2.5% 5% 5%;
+	text-align: center; 
+}

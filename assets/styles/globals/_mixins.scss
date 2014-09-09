@@ -5,18 +5,21 @@ MIXINS
   -webkit-border-radius: $radius;
      -moz-border-radius: $radius;
       -ms-border-radius: $radius;
-          border-radius: $radius; }
+          border-radius: $radius; 
+}
 
 @mixin background-cover {
 	-webkit-background-size: cover;
   	 -moz-background-size: cover;
   		 -o-background-size: cover;
-  				background-size: cover; }
+  				background-size: cover; 
+}
 
 @mixin box-shadow {
 	-moz-box-shadow:    $box-shadow;
   -webkit-box-shadow: $box-shadow;
-  box-shadow:         $box-shadow; }
+  box-shadow:         $box-shadow; 
+}
 
 @mixin inner-box-shadow { 
 	-moz-box-shadow:    $inner-box-shadow;

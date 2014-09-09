@@ -8,43 +8,29 @@ BODY STYLES
 	clear: both;
 	margin: 0 auto;
 	padding: 5%;
-	max-width: 940px; }
+	max-width: 940px; 
+}
 
 // CONTENT
 .content { 
 	margin-bottom: 7%;
 	padding: 0% 0 15%;
 	border-bottom: 1px solid rgba(0, 0, 0, .05);
-	overflow: hidden; }
+	overflow: hidden; 
+}
 
 .content:last-child {
 	padding-bottom: 0; 
-	border-bottom: 0; }
+	border-bottom: 0; 
+}
 
 .content h2 { 
 	margin-top: 0;
 	padding: 5% 0 0;
 	font-size: 1.75em;
-	text-align: center; }
+	text-align: center; 
+}
 
-.gallery li { 
-	float: left;
-	margin: 2.5%;
-	background: #e1e1e1;
-	@include border-radius(5px);
-	list-style: none;
-	width: 45%;
-
-	a { color: $body-copy; }
- }
-
-.gallery img { 
-	border-radius: 5px 5px 0 0;
-	width: 100%; }
-
-.caption { 
-	padding: 2.5% 5% 5%;
-	text-align: center; }
 
 // ABOUT ME SECTION
 .photo { 
@@ -53,22 +39,25 @@ BODY STYLES
 	//border: 5px solid $dark-blue;
 	@include border-radius (100%);
 	@include box-shadow;
-	width: 50%; }
+	width: 50%; 
+}
 
 
 // MEDIA QUERIES FOR PORTFOLIO
 // Tablet + Desktop
 @media #{$break-480} {
-	.gallery li { 
+	.gallery article { 
 		width: 28.3333%;
-		font-size: 1em; }
+		font-size: 1em; 
+	}
 
-	.gallery li:nth-child(4n) { clear: left; }
+	.gallery article:nth-child(4n) { clear: left; }
 
 	.photo { 
 		float: left;
 		margin: 0 5% 0 0;
-		max-width: 250px; }
+		max-width: 250px; 
+	}
 }
 
 
