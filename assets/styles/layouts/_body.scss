@@ -1,2 +1,59 @@
-// BODY STYLES
+/* ******************
+BODY STYLES
+******************* */
 // p b s t
+
+// WRAPPER
+.wrapper { 
+	clear: both;
+	margin: 0 auto;
+	padding: 5%;
+	max-width: 940px; }
+
+// CONTENT
+.photo { 
+	display: block;
+	margin: 0 auto 7%;
+	//border: 5px solid $dark-blue;
+	@include border-radius (100%);
+	@include box-shadow;
+	width: 50%; }
+
+.content { 
+	margin-bottom: 7%;
+	padding: 0% 0 15%;
+	border-bottom: 1px solid rgba(0, 0, 0, .05);
+	overflow: hidden; }
+
+.content:last-child { border-bottom: 0; }
+
+.content h2 { 
+	margin-top: 0;
+	padding: 5% 0 0;
+	font-size: 1.75em;
+	text-align: center; }
+
+.gallery li { 
+	float: left;
+	margin: 2.5%;
+	background: #ccc;
+	@include border-radius(5px);
+	list-style: none;
+	width: 45%; }
+
+.gallery img { 
+	border-radius: 5px 5px 0 0;
+	width: 100%; }
+
+.caption { 
+	padding: 2.5% 5% 5%;
+	font-size: 0.8em;
+	text-align: center; }
+
+	// MEDIA QUERIES FOR PORTFOLIO
+	@media #{$break-480} {
+		.gallery li { width: 28.3333%; }
+  
+  	.gallery li:nth-child(4n) { clear: left; } }
+
+

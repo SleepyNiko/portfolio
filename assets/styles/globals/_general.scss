@@ -1,4 +1,6 @@
-// height = top-border + content height + bottom-border
+/* ******************
+GENERAL STYLES
+******************* */
 
 * {
 	box-sizing: border-box;
@@ -8,5 +10,20 @@
 
 html,body{
 	// Styles
-	height: 100%;
-}
+	height: auto;
+	color: #222;
+	font-family: 'Open Sans', sans-serif; }
+
+body { background: $content-bg; }
+
+a {
+	color: $light-text; 
+	text-decoration: none; }
+
+	a:hover { color: $nav-link-hover; }
+
+h1, h2, h3, h4 { 
+	font-family: $open-sans;
+	font-weight: 400; }
+
+img { max-width: 100%; }
