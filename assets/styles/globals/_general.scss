@@ -11,10 +11,13 @@ GENERAL STYLES
 html,body{
 	// Styles
 	height: auto;
-	color: #222;
+	color: $body-copy;
 	font-family: 'Open Sans', sans-serif; }
 
-body { background: $content-bg; }
+body { 
+	background: $content-bg;
+	font-size: 14px;
+	line-height: 1.75em; }
 
 a {
 	color: $light-text; 

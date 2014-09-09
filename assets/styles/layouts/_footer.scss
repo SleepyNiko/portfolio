@@ -4,7 +4,7 @@ FOOTER STYLES
 // p b s t
 
 footer { 
-	padding: 5% 0;
+	padding: 5% 0 1.5%;
 	background: $blue-background;
 	border-top: 3px solid $dark-blue;
 	color: $light-text;
@@ -12,5 +12,7 @@ footer {
 	text-align: center;
 
 	h2 { margin-top: 0; }
+
+	.copyright { padding-top: 2.5%; }
 
 }

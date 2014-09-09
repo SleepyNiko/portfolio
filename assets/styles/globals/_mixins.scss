@@ -18,3 +18,8 @@ MIXINS
   -webkit-box-shadow: $box-shadow;
   box-shadow:         $box-shadow; }
 
+@mixin inner-box-shadow { 
+	-moz-box-shadow:    $inner-box-shadow;
+	-webkit-box-shadow: $inner-box-shadow;
+	box-shadow:         $inner-box-shadow;
+}

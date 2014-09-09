@@ -12,71 +12,100 @@ header {
   border-bottom: 4px solid $dark-blue;
 	width: 100%; }
 	
-	.intro { 
-		clear: both;
-		padding: 5% 0;
-		overflow: hidden;
-		width: 100%;
-		color: $light-text;
-		text-align: center;
-		line-height: 0;
-		
-		h1, h2 { text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35); }
+.intro { 
+	clear: both;
+	padding: 5% 0;
+	overflow: hidden;
+	width: 100%;
+	color: $light-text;
+	text-align: center;
+	line-height: 0;
+	
+	h1, h2 { text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.35); }
 
-		h1 { 
-			font-size: 3em;
-			font-family: $bitter;
-			font-weight: $bitter-bold;
-			line-height: 0.25em; }
-
-		h2 { 
-			font-family: $open-sans;
-			font-size: 1em;
-			font-weight: 600; }
-  }
-
-//
-	.navigation { 
-		background: $blue-background;
-		position: relative;
-		padding: 2%;
-		overflow: hidden;
-		width: 100%;
-		color: #fff; }
-
-	.logo { 
-		display: none;
-		//float: left; 
-		max-height: 50px;
+	h1 { 
+		font-size: 3em;
 		font-family: $bitter;
-		font-size: 24px;
 		font-weight: $bitter-bold;
-		
-		img { max-width: 100%;}
+		line-height: 0.25em; }
+
+	h2 { 
+		font-family: $open-sans;
+		font-size: 1em;
+		font-weight: 600;
+	} 
+}
+
+// NAVIGATION SECTION
+.navigation { 
+	background: $blue-background;
+	position: relative;
+	padding: 2%;
+	overflow: hidden;
+	width: 100%;
+	color: #fff; 
+}
+
+.logo { 
+	display: none;
+	float: left; 
+	max-height: 50px;
+	font-family: $bitter;
+	font-size: 24px;
+	font-weight: $bitter-bold;
+	
+	img { max-width: 100%; }
+}
+
+nav { 
+	//float: right;
+	padding: 10px 0;
+	max-heght: 50px;
+	font-size: 1.25em;
+	text-align: center 
+}
+
+nav ul { 
+  margin: 0 10px;
+  padding: 0;  
+  list-style: none;
+	
+	li { display: inline-block; } 
+}
+
+nav a {
+	padding: 10px 0;
+	color: $light-text;
+	font-weight: $openSans-semi-bold; 
+}
+
+nav a:hover { color: $nav-link-hover; }
+
+
+// MEDIA QUERIES FOR HEADER
+// Tablet + Desktop
+@media #{ $break-480 } {
+	header { 
+		max-height: none;
+		border-bottom: none;
+		@include inner-box-shadow; 
 	}
 
+	.logo { display: block; }
+
+	.navigation { 
+		position: fixed;
+		top: 0;
+		background: none; 
+	} 
+
 	nav { 
-		//float: right;
-		padding: 10px 0;
-		max-heght: 50px;
-		font-size: 1.25em;
-		text-align: center }
+		padding: 5px 0;
+		float: right; }
 
-	nav ul { 
-    margin: 0 10px;
-    padding: 0;  
-    list-style: none;
-		
-		li { display: inline-block; } 
-  }
-  
-  nav a {
-  	padding: 10px 0;
-		color: $light-text;
-  	font-weight: 800; }
-	
-	nav a:hover { color: $nav-link-hover;}
+	.intro { padding: 25% 0;
 
+		h1, h2 { text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.75); }
 
-  
-	
+	}
+}
