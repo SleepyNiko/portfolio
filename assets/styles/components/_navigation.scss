@@ -4,12 +4,17 @@ NAVIGATION STYLES
 // p b s t
 
 .navigation { 
-	background: $blue-background;
+	background: $mid-blue-background;
 	position: relative;
 	padding: 2%;
 	overflow: hidden;
 	width: 100%;
 	color: #fff; 
+}
+
+.navigation .scrolled { 
+	background: #000;
+	//@include transition;
 }
 
 .logo { 
@@ -27,7 +32,7 @@ nav {
 	//float: right;
 	padding: 10px 0;
 	max-heght: 50px;
-	font-size: 1.25em;
+	font-size: 1.2em;
 	text-align: center 
 }
 
@@ -35,8 +40,14 @@ nav ul {
   margin: 0 10px;
   padding: 0;  
   list-style: none;
+  width: auto;
 	
-	li { display: inline-block; } 
+	li { 
+		margin-right: 5%;
+		display: inline-block;
+	} 
+
+	li:last-child { margin-right: 0; }
 }
 
 nav a {
@@ -45,7 +56,10 @@ nav a {
 	font-weight: $openSans-semi-bold; 
 }
 
-nav a:hover { color: $nav-link-hover; }
+nav a:hover { 
+	color: $nav-link-hover; 
+	@include transition;
+}
 
 // MEDIA QUERIES FOR HEADER
 // Tablet + Desktop
@@ -58,8 +72,16 @@ nav a:hover { color: $nav-link-hover; }
 		background: none; 
 	} 
 
+	.dark-nav { 
+		background: #000; 
+		@include border-radius (10px);
+		@include transition;
+	}
+
 	nav { 
 		padding: 5px 0;
 		float: right;
   }
+
+  nav ul { width: 250px; }
 }

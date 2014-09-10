@@ -15,7 +15,7 @@
 		</head>
 		<body>
 		
-			<header>
+			<header id="home">
 				<div class="intro">
 					<h1>Nick Adkins</h1>
 					<h2>Front End / UI Developer</h2>
@@ -23,26 +23,28 @@
 
 				<div class="navigation"> 
 					<div class="logo">
-						<img src="assets/images/n-logo.png" alt="N Logo" />
+						<a href="#home">
+							<img src="assets/images/n-logo.png" alt="N Logo" />
+						</a>
 					</div><!--/logo-->
 					
 					<nav>
 						<ul>
-							<li><a href="">Portfolio</a> &nbsp; | &nbsp;</li>
-							<li><a href="">Contact</a></li>
+							<li><a href="#portfolio">Portfolio</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				</div><!--/navigation-->
 			</header>
 
-			<div class="wrapper">
-				
-				<!-- PORTFOLIO -->
+			<!-- PORTFOLIO -->
+			<div id="portfolio" class="portfolio-wrapper">
 				<section class="content">
 					
 					<h2>My most recent work</h2>
 
-					<div class="gallery">
+					<div class="gallery bubble">
 						<article>
 							<a href="" target="_blank">
 								<img src="assets/images/nick.jpg" alt="" />
@@ -84,35 +86,56 @@
 								<p class="caption">Caption here</p>
 							</a>
 						</article>
-					</div>
+					</div><!--/gallery-->
 
 				</section><!--/Portfolio Content-->
+			</div><!--/portfolio-wrapper-->
 
-				<!-- ABOUT ME -->
+			<!-- ABOUT ME -->
+			<div id="about" class="about-wrapper">
 				<section class="content">
 					
 					<h2>A little about me</h2>
+					
+					<article class="bubble">
+						<img class="photo" src="assets/images/nick1.png" alt="Nick" />
 
-					<img class="photo" src="assets/images/nick.jpg" alt="Nick" />
+						<p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus metus at justo malesuada, sed ultricies odio faucibus. Sed ullamcorper quam eu tincidunt ultricies. Sed a dolor justo. Etiam eleifend justo vitae quam vehicula, vitae sollicitudin risus accumsan. Aliquam sed magna in augue dapibus viverra.</p>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus metus at justo malesuada, sed ultricies odio faucibus. Sed ullamcorper quam eu tincidunt ultricies. Sed a dolor justo. Etiam eleifend justo vitae quam vehicula, vitae sollicitudin risus accumsan. Aliquam sed magna in augue dapibus viverra. Morbi vel neque nec tellus sagittis mollis non et orci. Proin eu turpis in ex consequat dignissim et a turpis. Quisque malesuada ligula in enim malesuada, vitae egestas justo consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur et elit euismod, varius ex ut, sodales tortor. Duis consequat, tellus in volutpat euismod, mauris ex lobortis quam, et faucibus arcu sem non justo.</p>
+						<p>Morbi vel neque nec tellus sagittis mollis non et orci. Proin eu turpis in ex consequat dignissim et a turpis. Quisque malesuada ligula in enim malesuada, vitae egestas justo consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur et elit euismod, varius ex ut, sodales tortor. Duis consequat, tellus in volutpat euismod, mauris ex lobortis quam, et faucibus arcu sem non justo.</p>
+					</article>
 					
 				</section><!--/About Me Content-->
-			</div><!--/wrapper-->
+			
+			</div><!--/about-wrapper-->
 
-			<footer>
+			<!-- CONTACT -->
+			<footer id="contact">
 				<h2>Let's connect</h2>
 
 				<p>contact form?</p>
 				<p>social links?<p>
 
-				<p class="copyright">&copy; 2014, photography by Nick Adkins.</p>
-			</footer>
+				<p class="copyright">Photography &amp; site &copy; 2014 Nick Adkins.</p>
+			</footer><!--/contact-->
 
 			<!-- SCRIPTS -->
 			<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+			<script src="assets/scripts/scripts.js"></script>
 
 			<!-- GRUNT -->
-			<script src="//localhost:35729/livereload.js"></script>
+			<!--script src="//localhost:35729/livereload.js"></script-->
+
+			<!-- GOOGLE ANALYTICS -->
+			<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-15674715-1', 'auto');
+			  ga('send', 'pageview');
+			</script>
+
 		</body>
 	</html>

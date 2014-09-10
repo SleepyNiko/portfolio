@@ -3,20 +3,25 @@ BODY STYLES
 ******************* */
 // p b s t
 
-// WRAPPER
-.wrapper { 
+// WRAPPERS
+.portfolio-wrapper, .about-wrapper { 
 	clear: both;
-	margin: 0 auto;
+	//margin: 0 auto;
 	padding: 5%;
-	max-width: 940px; 
+	color: $light-text;
 }
+
+.portfolio-wrapper { background: $dark-blue-background; }
+
+.about-wrapper { background: $light-blue-background; }
 
 // CONTENT
 .content { 
-	margin-bottom: 7%;
-	padding: 0% 0 15%;
+	margin: 0 auto 7%;
+	padding: 0% 0% 15%;
 	border-bottom: 1px solid rgba(0, 0, 0, .05);
 	overflow: hidden; 
+	max-width: 940px; 
 }
 
 .content:last-child {
@@ -26,11 +31,19 @@ BODY STYLES
 
 .content h2 { 
 	margin-top: 0;
-	padding: 5% 0 0;
-	font-size: 1.75em;
+	padding: 7% 0 5%;
+	font-size: 2.1em;
+	font-family: $bitter;
+	font-weight: $bitter-normal;
 	text-align: center; 
 }
 
+.bubble { 
+	padding: 3%;
+	overflow: hidden;
+	background: $bubble-background;
+	@include border-radius (10px);
+}
 
 // ABOUT ME SECTION
 .photo { 
@@ -55,8 +68,13 @@ BODY STYLES
 
 	.photo { 
 		float: left;
-		margin: 0 5% 0 0;
-		max-width: 250px; 
+		margin: 0 5% 10% 0;
+		max-width: 30%; 
+	}
+
+	.about-paragraph { 
+		float: left;
+		width: 65%;
 	}
 }
 
