@@ -4,17 +4,33 @@ FOOTER STYLES
 // p b s t
 
 footer { 
-	padding: 5% 0 1.5%;
+	padding: 5% 5% 1.5%;
 	background: $mid-blue-background;
-	border-top: 3px solid $dark-blue;
 	color: $light-text;
 	text-align: center;
 
 	h2 { margin-top: 0; }
 
 	.copyright { 
-		padding-top: 2.5%;
+		margin-bottom: 0;
+		padding-top: 2%;
 		font-size: 0.75em; 
 	}
+}
 
+footer .container { 
+	margin-bottom: 0;
+	padding-bottom: 7%;
+	border-bottom: 0;
+}
+
+
+// MEDIA QUERIES FOR FOOTER
+// Tablet + Desktop
+@media #{ $break-480 } { 
+	footer { box-shadow: $inner-box-shadow; }
+
+	footer .container { border-bottom: 1px solid rgba(0, 0, 0, .05); }
+
+	.copyright { clear: both; }
 }

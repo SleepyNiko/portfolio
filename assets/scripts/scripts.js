@@ -12,7 +12,7 @@ $(document).ready(function () {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 600);
         return false;
       }
     }
@@ -20,13 +20,13 @@ $(document).ready(function () {
 
   // Scroll detect functionality
 	$(window).scroll(function() {    
-    var scroll = $(window).scrollTop();
-
-    if (scroll >= 600) {
-        $("nav").addClass("dark-nav");
-    } else {
-        $("nav").removeClass("dark-nav");
-    }
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 500) {
+            $("nav").addClass("dark-nav");
+        } else {
+            $("nav").removeClass("dark-nav");
+        }
+    });
 	});
 
 });

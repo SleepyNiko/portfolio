@@ -1,0 +1,44 @@
+/* ******************
+SOCIAL LINKS STYLES
+******************* */
+// p b s t
+
+.social-links {
+	font-size: 2em;
+	@include transition;
+
+	i { 
+		margin-right: 2.5%;
+		display: inline-block; 
+		color: #fff;
+	}
+
+	i:last-child { margin-right: 0; }
+	i:hover, i:active { 
+		color: $nav-link-hover;
+		@include transition; 
+	}
+}
+
+// MEDIA QUERIES FOR SOCIAL LINKS
+// Tablet + Desktop
+@media #{ $break-480 } { 
+	
+	.social-links {  
+		margin: 7% auto 0;
+		padding: 1.5%;
+		width: 225px;
+		background: $bubble-background;
+		@include border-radius(35px);
+	
+		i { 
+			// padding: 1.2% 1.4%;
+			// background: #000;
+			// box-shadow: $drop-shadow; 
+			// @include border-radius(100%);
+			margin-right: 5%;
+			font-size: 1em;
+		}
+
+	}
+}

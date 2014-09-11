@@ -1,0 +1,76 @@
+/* ******************
+FORM STYLES
+******************* */
+// p b s t
+
+// FORM
+.form {
+	margin: 0 auto;
+	padding: 2.5%;
+	width: 100%;
+	@include transition;
+} 
+
+.field { width: 100%; }
+
+form label { 
+	padding: 6% 0 3%;
+	display: block;
+	font-family: $bitter;
+	font-size: 1.25em;
+	font-weight: $bitter-normal;
+	text-align: left; 
+}
+
+form input, form textarea, form button { 
+	margin-bottom: 5%;
+	padding: 5%;
+	width: 100%;
+	border: 0;
+	@include border-radius(3px);
+	box-shadow: $input-box-shadow;
+	@include transition;
+	color: $form-text;
+	text-align: left;
+}
+
+form input:focus, form textarea:focus {
+	background: $input-focus-background;
+	box-shadow: none;
+	color: $form-text-focus;
+}
+
+form textarea {
+	min-height: 200px;
+}
+
+form button { 
+	margin-bottom: 0;
+	background: $light-blue-background;
+	color: $light-text;
+	font-family: $bitter;
+	font-size: 1.25em;
+	text-align: center;
+}
+
+form button:hover { box-shadow: none; }
+
+form button:active { background: $dark-blue-background; }
+
+// MEDIA QUERIES FOR FORM & CONNECT INFO
+// Tablet + Desktop
+@media #{ $break-660 } { 
+	.form { 
+		margin: 0 auto;
+		width: 75%; 
+
+	}
+}
+
+@media #{ $break-1025 } { 
+
+	form input, form textarea { padding: 3%; }
+
+	form button { padding: 4%; }
+
+}

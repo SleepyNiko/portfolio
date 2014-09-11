@@ -12,10 +12,7 @@ NAVIGATION STYLES
 	color: #fff; 
 }
 
-.navigation .scrolled { 
-	background: #000;
-	//@include transition;
-}
+.scrolled { background: #000; }
 
 .logo { 
 	display: none;
@@ -29,7 +26,6 @@ NAVIGATION STYLES
 }
 
 nav { 
-	//float: right;
 	padding: 10px 0;
 	max-heght: 50px;
 	font-size: 1.2em;
@@ -54,10 +50,11 @@ nav a {
 	padding: 10px 0;
 	color: $light-text;
 	font-weight: $openSans-semi-bold; 
+	@include transition;
 }
 
-nav a:hover { 
-	color: $nav-link-hover; 
+nav a:hover, nav a:active { 
+	color: $nav-link-hover;
 	@include transition;
 }
 
@@ -69,18 +66,19 @@ nav a:hover {
 	.navigation { 
 		position: fixed;
 		top: 0;
-		background: none; 
+		background-color: transparent; //$clear-background;
+		background-image: none;
 	} 
 
-	.dark-nav { 
-		background: #000; 
-		@include border-radius (10px);
-		@include transition;
-	}
+	.dark-nav { background: $dark-nav-background; }
 
 	nav { 
 		padding: 5px 0;
 		float: right;
+		background: $clear-background;
+		@include border-radius (5px);
+		@include transition;
+		font-size: 1em;
   }
 
   nav ul { width: 250px; }

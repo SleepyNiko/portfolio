@@ -5,11 +5,12 @@ GALLERY STYLES
 
  .gallery article { 
 	float: left;
-	margin: 2.5%;
+	margin: 2.5%;	
+	width: 45%;
 	background: #e1e1e1;
 	@include border-radius(5px);
 	list-style: none;
-	width: 45%;
+	@include transition;
 
 	a { color: $body-copy; }
  }
@@ -24,4 +25,15 @@ GALLERY STYLES
 .caption { 
 	padding: 2.5% 5% 5%;
 	text-align: center; 
+}
+
+// MEDIA QUERIES FOR PORTFOLIO
+// Tablet + Desktop
+@media #{$break-660} {
+.gallery article { 
+		width: 28.3333%;
+		font-size: 1em; 
+	}
+
+	.gallery article:nth-child(4n) { clear: left; }
 }
