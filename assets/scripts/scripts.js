@@ -4,6 +4,10 @@ CUSTOM SCRIPTS
 
 $(document).ready(function () {
   
+  // Background Switch on refresh/reload
+  var images = ['bg-bike.jpg', 'bg-rain.jpg'];
+  $('header').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+
   // Smooth Scroll functionality
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -22,9 +26,9 @@ $(document).ready(function () {
 	$(window).scroll(function() {    
     $(window).scroll(function () {
         if ($(document).scrollTop() > 500) {
-            $("nav").addClass("dark-nav");
+            $(".navigation").addClass("dark-nav");
         } else {
-            $("nav").removeClass("dark-nav");
+            $(".navigation").removeClass("dark-nav");
         }
     });
 	});

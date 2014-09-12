@@ -13,7 +13,7 @@ html,body{
 	// Styles
 	height: auto;
 	color: $body-copy;
-	font-family: 'Open Sans', sans-serif; 
+	font-family: $source;
 }
 
 body { 
@@ -30,17 +30,17 @@ a {
 	a:hover { color: $nav-link-hover; }
 
 h1, h2, h3, h4 { 
-	font-family: $open-sans;
-	font-weight: 400; 
+	font-weight: 300;	
+	@include transition; 
 }
 
 img { max-width: 100%; }
 
-p { margin-bottom: 7%; }
+p { margin-bottom: 10%; }
 
 // MEDIA QUERIES FOR HEADER
 // Tablet + Desktop
 @media #{ $break-480 } {
-	p { margin-bottom: 2.5%; }
+	p { margin-bottom: 25px; }
 }
 

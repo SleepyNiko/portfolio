@@ -32,6 +32,11 @@ $(function() {
 			$('#name').val('');
 			$('#email').val('');
 			$('#message').val('');
+
+			//Hide form, display thank you message
+			$('#ajax-contact').fadeOut("slow");
+			$('#form-messages').fadeIn("slow");
+
 		})
 		.fail(function(data) {
 			// Make sure that the formMessages div has the 'error' class.

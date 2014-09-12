@@ -11,10 +11,6 @@ BODY STYLES
 	color: $light-text;
 }
 
-.portfolio-wrapper { background: $dark-blue-background; }
-
-.about-wrapper { background: $light-blue-background; }
-
 // CONTAINER
 .container { 
 	margin: 0 auto 7%;
@@ -22,20 +18,29 @@ BODY STYLES
 	border-bottom: 1px solid rgba(0, 0, 0, .05);
 	overflow: hidden; 
 	max-width: 940px; 
-}
+	letter-spacing: 0.25px;
+} 
 
 .container:last-child {
 	padding-bottom: 0; 
 	border-bottom: 0; 
 }
 
-.container h2, footer h2 { 
+.container h2, footer h2 { padding: 12% 0 5%; }
+
+.container h2, .container h3, footer h2 { 
+	clear: both;
 	margin-top: 0;
-	padding: 7% 0 5%;
 	font-size: 2.1em;
-	font-family: $bitter;
-	font-weight: $bitter-normal;
+	font-weight: $source-light;
 	text-align: center; 
+	text-shadow: $text-shadow;
+}
+
+.container h3 { 
+	margin: 12% 0 2.5%;
+	padding-bottom: 0;
+	font-size: 1.5em; 
 }
 
 .bubble { 
@@ -45,34 +50,60 @@ BODY STYLES
 	@include border-radius (10px);
 }
 
+.bubble-h3 { 
+	padding-top: 35px; 
+	border-top: 1px solid rgba(0, 0, 0, .05);
+}
+
+.bubble-paragraph { text-align: center; }
+
+
+// PORFOLIO SECTION 
+.portfolio-wrapper { background: $lobster-background; }
+
+.portfolio-wrapper .container { margin-bottom: 0; }
+
+a.portfolio-git:hover, .portfolio-git i:hover { 
+	color: $git-hover; 
+	@include transition;
+}
+
 // ABOUT ME SECTION
+.about-wrapper { background: $green-background; }
+
 .photo { 
 	display: block;
 	margin: 0 auto 7%;
-	//border: 5px solid $dark-blue;
 	@include border-radius (100%);
 	@include box-shadow;
 	width: 50%; 
 }
 
-
 // MEDIA QUERIES FOR PORTFOLIO
 // Tablet + Desktop
-@media #{$break-660} {
+@media #{ $break-660 } {
+	//.container h3 { margin: 0; }
+}
+
+@media #{ $break-769 } {
 	.bubble { padding: 3%; }
 
 	.photo { 
+		display:block;
 		float: left;
-		margin: 0 5% 10% 0;
+		margin: 0 5% 10% 2.5%;
 		max-width: 30%; 
 		@include transition;
 	}
 
-	.about-paragraph { 
+	.container h3 { 
+		margin-top: 10%;  
+		@include transition;
+	}
+
+	.para-container { 
 		float: left;
-		width: 65%;
+		width: 60%;
 		@include transition;
 	}
 }
-
-

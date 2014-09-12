@@ -4,6 +4,8 @@ FORM STYLES
 // p b s t
 
 // FORM
+#form-messages { margin-bottom: 2.5%; }
+
 .form {
 	margin: 0 auto;
 	padding: 2.5%;
@@ -12,15 +14,6 @@ FORM STYLES
 } 
 
 .field { width: 100%; }
-
-form label { 
-	padding: 6% 0 3%;
-	display: block;
-	font-family: $bitter;
-	font-size: 1.25em;
-	font-weight: $bitter-normal;
-	text-align: left; 
-}
 
 form input, form textarea, form button { 
 	margin-bottom: 5%;
@@ -34,21 +27,20 @@ form input, form textarea, form button {
 	text-align: left;
 }
 
+form input, form textarea { background: $light-background; }
+
 form input:focus, form textarea:focus {
 	background: $input-focus-background;
 	box-shadow: none;
 	color: $form-text-focus;
 }
 
-form textarea {
-	min-height: 200px;
-}
+form textarea {	min-height: 200px; }
 
 form button { 
 	margin-bottom: 0;
 	background: $light-blue-background;
 	color: $light-text;
-	font-family: $bitter;
 	font-size: 1.25em;
 	text-align: center;
 }
@@ -63,14 +55,10 @@ form button:active { background: $dark-blue-background; }
 	.form { 
 		margin: 0 auto;
 		width: 75%; 
-
 	}
 }
 
 @media #{ $break-1025 } { 
-
 	form input, form textarea { padding: 3%; }
-
-	form button { padding: 4%; }
-
+	form button { padding: 3%; }
 }

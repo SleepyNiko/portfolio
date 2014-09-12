@@ -6,7 +6,7 @@ NAVIGATION STYLES
 .navigation { 
 	background: $mid-blue-background;
 	position: relative;
-	padding: 2%;
+	padding: 1.25%;
 	overflow: hidden;
 	width: 100%;
 	color: #fff; 
@@ -18,9 +18,8 @@ NAVIGATION STYLES
 	display: none;
 	float: left; 
 	max-height: 50px;
-	font-family: $bitter;
 	font-size: 24px;
-	font-weight: $bitter-bold;
+	font-weight: $source-bold;
 	
 	img { max-width: 100%; }
 }
@@ -29,7 +28,7 @@ nav {
 	padding: 10px 0;
 	max-heght: 50px;
 	font-size: 1.2em;
-	text-align: center 
+	text-align: center;
 }
 
 nav ul { 
@@ -48,8 +47,8 @@ nav ul {
 
 nav a {
 	padding: 10px 0;
-	color: $light-text;
-	font-weight: $openSans-semi-bold; 
+	color: $light-background;
+	font-weight: $source-semi-bold; 
 	@include transition;
 }
 
@@ -61,24 +60,26 @@ nav a:hover, nav a:active {
 // MEDIA QUERIES FOR HEADER
 // Tablet + Desktop
 @media #{ $break-480 } {
-	.logo { display: block; }
+	.logo { 
+		padding: 3px 0 0 3px;
+		display: block; 
+	}
 
 	.navigation { 
 		position: fixed;
 		top: 0;
-		background-color: transparent; //$clear-background;
-		background-image: none;
+		background-color: transparent;
+		@include transition;
 	} 
 
 	.dark-nav { background: $dark-nav-background; }
 
 	nav { 
-		padding: 5px 0;
+		padding: 7px 0;
 		float: right;
-		background: $clear-background;
-		@include border-radius (5px);
-		@include transition;
-		font-size: 1em;
+		@include border-radius (20px);
+		font-size: 1.1em;
+		text-align: right;
   }
 
   nav ul { width: 250px; }

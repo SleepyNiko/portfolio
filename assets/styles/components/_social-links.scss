@@ -4,41 +4,50 @@ SOCIAL LINKS STYLES
 // p b s t
 
 .social-links {
+	color: #fff;
+	display: block;
 	font-size: 2em;
+	text-align: center;	
 	@include transition;
 
-	i { 
-		margin-right: 2.5%;
-		display: inline-block; 
-		color: #fff;
-	}
+	a { 
+		padding: 0 8px; 
+		color: $white;
 
-	i:last-child { margin-right: 0; }
-	i:hover, i:active { 
-		color: $nav-link-hover;
-		@include transition; 
+		:hover, :active {
+			color: $nav-link-hover;
+			@include transition;
+		} 
+
+		:first-child { margin-left: 0; }
+		:last-child { margin-right: 0; }
 	}
 }
+
+.block { 
+	padding: 15px 25px;
+	display: inline;
+	line-height: 2.25em;
+	@include border-radius(50px); 
+}
+
+.about-wrapper .social-links { margin-top: 5%; }
+
+.about-wrapper .social-links a { 
+	color: $light-text; 
+	
+	:hover, :active { color: $nav-link-hover; }
+}
+
+.about-wrapper .block { background: $bubble-background; }
 
 // MEDIA QUERIES FOR SOCIAL LINKS
 // Tablet + Desktop
 @media #{ $break-480 } { 
-	
-	.social-links {  
-		margin: 7% auto 0;
-		padding: 1.5%;
-		width: 225px;
-		background: $bubble-background;
-		@include border-radius(35px);
-	
-		i { 
-			// padding: 1.2% 1.4%;
-			// background: #000;
-			// box-shadow: $drop-shadow; 
-			// @include border-radius(100%);
-			margin-right: 5%;
-			font-size: 1em;
-		}
-
+	.social-links { 
+		margin-top: 5%;
+		color: $light-background; 
 	}
+	
+	.about-wrapper .social-links { margin-top: 2.5%; }
 }
