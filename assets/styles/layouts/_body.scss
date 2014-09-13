@@ -18,7 +18,7 @@ BODY STYLES
 	border-bottom: 1px solid rgba(0, 0, 0, .05);
 	overflow: hidden; 
 	max-width: 940px; 
-	letter-spacing: 0.25px;
+	letter-spacing: 0.35px;
 } 
 
 .container:last-child {
@@ -78,6 +78,8 @@ a.portfolio-git:hover, .portfolio-git i:hover {
 	@include box-shadow;
 	width: 50%; 
 }
+
+.para-container { font-size: 1.075em; }
 
 // MEDIA QUERIES FOR PORTFOLIO
 // Tablet + Desktop

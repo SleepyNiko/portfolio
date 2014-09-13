@@ -16,6 +16,9 @@
 			<meta property="og:title" content="nick adkins"/>
 			<meta property="og:site_name" content="nickadkins.com"/>
 			<meta property="og:image" content="http://www.nickadkins.com/images/footer_n.png"/>
+
+			<!-- FANCYBOX STYLING -->
+			<link rel="stylesheet" type="text/css" href="assets/scripts/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
 			
 			<!-- STYLING -->
 			<link rel="stylesheet" href="assets/styles/styles.css" />
@@ -93,7 +96,7 @@
 						</article>
 						
 						<article>
-							<a href="" target="_blank">
+							<a class="fancybox" href="assets/images/projects/wildfire-screen.png">
 								<img src="assets/images/projects/wildfire.jpg" alt="" />
 							</a>
 
@@ -101,7 +104,7 @@
 						</article>
 
 						<article>
-							<a href="" target="_blank">
+							<a class="fancybox" href="assets/images/projects/cobs-screen.png">
 								<img src="assets/images/projects/cobs.jpg" alt="" />
 							</a>
 
@@ -155,7 +158,7 @@
 						<img class="photo" src="assets/images/nick1.png" alt="Nick" />
 						
 						<div class="para-container">
-							<p>I am a passionate Commercial Front End Web Developer, designer located in downtown Vancouver. My web development/design background began its roots from a hobby at an early age and now having acquired a Diploma in Applied Commercial Web Development, is a loving career.</p>
+							<p>I am a passionate Commercial Front End Web Developer, designer located in downtown Vancouver. My web development/design background began its roots from a hobby at an early age. Having acquired a Diploma in Applied Commercial Web Development, is a loving career.</p>
 
 							<p>Constantly acquiring new techniques, tools, skills &amp; knowledge to expand my 'Web-head' (p.s: TeamTreehouse, awesome!) to bring into practice in the real [digital] world.</p> 
 
@@ -238,9 +241,6 @@
 			<!-- MAILING SCRIPT -->
 			<script src="assets/scripts/mailer.js"></script>
 
-			<!-- GRUNT -->
-			<!--script src="//localhost:35729/livereload.js"></script-->
-
 			<!-- GOOGLE ANALYTICS -->
 			<script>
 			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -250,6 +250,14 @@
 
 			  ga('create', 'UA-15674715-1', 'auto');
 			  ga('send', 'pageview');
+			</script>
+
+			<!-- FANCYBOX SCRIPTS -->
+			<script type="text/javascript" src="assets/scripts/fancybox/jquery.fancybox.js"></script>
+			<script type="text/javascript">
+				$(document).ready(function() {
+					$(".fancybox").fancybox();
+				});
 			</script>
 
 		</body>

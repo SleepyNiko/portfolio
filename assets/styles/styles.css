@@ -584,7 +584,7 @@ BODY STYLES
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   overflow: hidden;
   max-width: 940px;
-  letter-spacing: 0.25px; }
+  letter-spacing: 0.35px; }
 
 .container:last-child {
   padding-bottom: 0;
@@ -649,6 +649,9 @@ a.portfolio-git:hover, .portfolio-git i:hover {
   -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
   width: 50%; }
+
+.para-container {
+  font-size: 1.075em; }
 
 @media screen and (min-width: 769px) {
   .bubble {

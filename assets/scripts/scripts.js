@@ -5,8 +5,8 @@ CUSTOM SCRIPTS
 $(document).ready(function () {
   
   // Background Switch on refresh/reload
-  var images = ['bg-bike.jpg', 'bg-rain.jpg'];
-  $('header').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+  // var images = ['bg-bike.jpg', 'bg-rain.jpg'];
+  // $('header').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
   // Smooth Scroll functionality
   $('a[href*=#]:not([href=#])').click(function() {
@@ -32,5 +32,4 @@ $(document).ready(function () {
         }
     });
 	});
-
 });
