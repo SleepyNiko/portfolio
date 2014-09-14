@@ -59,11 +59,20 @@ BODY STYLES
 
 
 // PORFOLIO SECTION 
-.portfolio-wrapper { background: $lobster-background; }
+.portfolio-wrapper { 
+	margin-bottom: 0;
+	padding-bottom: 0;
+	overflow: hidden;
+	background: $lobster-background; 
+}
 
-.portfolio-wrapper .container { margin-bottom: 0; }
+.portfolio-git {
+	padding-top: 7%; 
+	display: block; 
+	font-size: .75em; 
+}
 
-a.portfolio-git:hover, .portfolio-git i:hover { 
+.portfolio-git a:hover, .portfolio-git i:hover { 
 	color: $git-hover; 
 	@include transition;
 }
@@ -83,11 +92,28 @@ a.portfolio-git:hover, .portfolio-git i:hover {
 
 // MEDIA QUERIES FOR PORTFOLIO
 // Tablet + Desktop
+
+@media #{ $break-479 } {
+	.portfolio-git { 
+		padding-top: 5%; 
+		font-size: .875em; 
+		@include transition;
+	}
+}
+
 @media #{ $break-660 } {
-	//.container h3 { margin: 0; }
+	.portfolio-git { 
+		padding-top: 3%;
+		font-size: 1em;
+	}
 }
 
 @media #{ $break-769 } {
+	.portfolio-git { 
+		padding-top: 2.5%;
+	}
+
+
 	.bubble { padding: 3%; }
 
 	.photo { 

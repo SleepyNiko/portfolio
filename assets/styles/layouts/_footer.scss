@@ -27,7 +27,7 @@ footer .container {
 
 // MEDIA QUERIES FOR FOOTER
 // Tablet + Desktop
-@media #{ $break-480 } { 
+@media #{ $break-479 } { 
 	footer { box-shadow: $inner-box-shadow; }
 
 	footer .container { border-bottom: 1px solid rgba(0, 0, 0, .05); }

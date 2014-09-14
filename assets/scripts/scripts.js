@@ -5,8 +5,8 @@ CUSTOM SCRIPTS
 $(document).ready(function () {
   
   // Background Switch on refresh/reload
-  // var images = ['bg-bike.jpg', 'bg-rain.jpg'];
-  // $('header').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
+  var images = ['bg-bike1.jpg', 'bg-rain1.jpg', 'bg-clouds.jpg', 'bg-molehill.jpg', 'bg-yaletown.jpg'];
+  $('header').css({'background-image': 'url(assets/images/' + images[Math.floor(Math.random() * images.length)] + ')'});
 
   // Smooth Scroll functionality
   $('a[href*=#]:not([href=#])').click(function() {

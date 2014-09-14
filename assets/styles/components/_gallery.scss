@@ -31,15 +31,27 @@ GALLERY STYLES
 .gallery p { margin-bottom: 0; }
 
 .caption { 
+	position: relative;
 	padding: 2.5% 5% 5%;
 	font-weight: $source-normal;
 	line-height: 1.35em;
 	text-align: center; 
 }
 
+.gallery-icon { 
+	float: right;
+	position: absolute;
+	right: 5%;
+	margin-top: 3px;
+	display: inline-block;
+	z-index: 1;
+	color: #ccc;
+	font-size: .75em;
+}
+
 // MEDIA QUERIES FOR PORTFOLIO
 // Tablet + Desktop
-@media #{ $break-480 } {
+@media #{ $break-479 } {
 	.gallery article {
 		float: left;
 		margin: 2.5%;	

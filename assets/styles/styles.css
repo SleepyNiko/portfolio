@@ -239,7 +239,7 @@ img {
 p {
   margin-bottom: 10%; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   p {
     margin-bottom: 25px; } }
 /* ******************
@@ -298,7 +298,7 @@ nav a:hover, nav a:active {
   transition: all 0.2s ease-in-out;
   /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */ }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   .logo {
     padding: 3px 0 0 3px;
     display: block; }
@@ -306,6 +306,7 @@ nav a:hover, nav a:active {
   .navigation {
     position: fixed;
     top: 0;
+    z-index: 2;
     background-color: transparent;
     -webkit-transition: all 0.2s ease-in-out;
     /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
@@ -356,11 +357,11 @@ SOCIAL LINKS STYLES
 .block {
   padding: 15px 25px;
   display: inline;
-  line-height: 2.25em;
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   -ms-border-radius: 50px;
-  border-radius: 50px; }
+  border-radius: 50px;
+  line-height: 2.25em; }
 
 .about-wrapper .social-links {
   margin-top: 5%; }
@@ -373,7 +374,7 @@ SOCIAL LINKS STYLES
 .about-wrapper .block {
   background: rgba(0, 0, 0, 0.06); }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   .social-links {
     margin-top: 5%;
     color: #f8f7ee; }
@@ -418,12 +419,23 @@ GALLERY STYLES
   margin-bottom: 0; }
 
 .caption {
+  position: relative;
   padding: 2.5% 5% 5%;
   font-weight: 400;
   line-height: 1.35em;
   text-align: center; }
 
-@media screen and (min-width: 480px) {
+.gallery-icon {
+  float: right;
+  position: absolute;
+  right: 5%;
+  margin-top: 3px;
+  display: inline-block;
+  z-index: 1;
+  color: #ccc;
+  font-size: .75em; }
+
+@media screen and (min-width: 479px) {
   .gallery article {
     float: left;
     margin: 2.5%;
@@ -534,7 +546,7 @@ header {
     font-size: 1em;
     font-weight: 400; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   header {
     max-height: none;
     /* Preserve aspet ratio */
@@ -623,12 +635,17 @@ BODY STYLES
   text-align: center; }
 
 .portfolio-wrapper {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow: hidden;
   background: #ee5555; }
 
-.portfolio-wrapper .container {
-  margin-bottom: 0; }
+.portfolio-git {
+  padding-top: 7%;
+  display: block;
+  font-size: .75em; }
 
-a.portfolio-git:hover, .portfolio-git i:hover {
+.portfolio-git a:hover, .portfolio-git i:hover {
   color: #323232;
   -webkit-transition: all 0.2s ease-in-out;
   /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
@@ -653,7 +670,22 @@ a.portfolio-git:hover, .portfolio-git i:hover {
 .para-container {
   font-size: 1.075em; }
 
+@media screen and (min-width: 479px) {
+  .portfolio-git {
+    padding-top: 5%;
+    font-size: .875em;
+    -webkit-transition: all 0.2s ease-in-out;
+    /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
+    transition: all 0.2s ease-in-out;
+    /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */ } }
+@media screen and (min-width: 660px) {
+  .portfolio-git {
+    padding-top: 3%;
+    font-size: 1em; } }
 @media screen and (min-width: 769px) {
+  .portfolio-git {
+    padding-top: 2.5%; }
+
   .bubble {
     padding: 3%; }
 
@@ -701,7 +733,7 @@ footer .container {
   padding-bottom: 7%;
   border-bottom: 0; }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 479px) {
   footer {
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.25); }
 

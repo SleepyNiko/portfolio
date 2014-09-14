@@ -27,8 +27,8 @@ SOCIAL LINKS STYLES
 .block { 
 	padding: 15px 25px;
 	display: inline;
-	line-height: 2.25em;
 	@include border-radius(50px); 
+	line-height: 2.25em;
 }
 
 .about-wrapper .social-links { margin-top: 5%; }
@@ -43,7 +43,7 @@ SOCIAL LINKS STYLES
 
 // MEDIA QUERIES FOR SOCIAL LINKS
 // Tablet + Desktop
-@media #{ $break-480 } { 
+@media #{ $break-479 } { 
 	.social-links { 
 		margin-top: 5%;
 		color: $light-background; 

@@ -59,7 +59,7 @@ nav a:hover, nav a:active {
 
 // MEDIA QUERIES FOR HEADER
 // Tablet + Desktop
-@media #{ $break-480 } {
+@media #{ $break-479 } {
 	.logo { 
 		padding: 3px 0 0 3px;
 		display: block; 
@@ -68,6 +68,7 @@ nav a:hover, nav a:active {
 	.navigation { 
 		position: fixed;
 		top: 0;
+		z-index: 2;
 		background-color: transparent;
 		@include transition;
 	} 
