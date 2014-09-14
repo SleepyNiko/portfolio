@@ -43,15 +43,12 @@ header {
 		/* Preserve aspet ratio */
 		min-width: 100%;
 		min-height: 100%;
-  	
-		border-bottom: none;
-		//@include inner-box-shadow; 
+		border-bottom: none; 
 	}
 
 	.intro { 
-		padding: 15% 0;
+		padding: 20% 0 10%;
 
-		// h1, h2 { text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5); }
 		h1 { font-size: 4em; }
 		h2 { font-size: 1.25em; }
 	}
@@ -67,17 +64,10 @@ header {
 	}
 
 	.intro { 
-		padding: 24% 0;
+		padding: 24% 0 12%;
 
 		h1 { font-size: 6em; }
 		h2 { font-size: 1.75em; }
 	}
 }
 
-// Desktop
-// @media #{ $break-1025 } {
-// 	header { 
-// 		background: url('../images/bg-yaletown.jpg') no-repeat center center fixed;
-// 		@include background-cover;
-// 	} 
-// }
