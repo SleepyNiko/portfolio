@@ -43,6 +43,10 @@ header {
 		/* Preserve aspet ratio */
 		min-width: 100%;
 		min-height: 100%;
+		overflow:hidden;
+		background: url('../images/bg-yaletown.jpg') no-repeat center center;
+		@include background-cover;
+
 		border-bottom: none; 
 	}
 
@@ -57,11 +61,10 @@ header {
 // Tablet
 @media #{ $break-660 } {
 
-	header { 
-		//max-height: 768px;
-		background: url('../images/bg-yaletown.jpg') no-repeat center center;
-		@include background-cover;
-	}
+	// header { 
+	// 	//max-height: 768px;
+		
+	// }
 
 	.intro { 
 		padding: 24% 0 12%;

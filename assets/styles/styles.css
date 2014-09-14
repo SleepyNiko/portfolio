@@ -552,6 +552,12 @@ header {
     /* Preserve aspet ratio */
     min-width: 100%;
     min-height: 100%;
+    overflow: hidden;
+    background: url("../images/bg-yaletown.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     border-bottom: none; }
 
   .intro {
@@ -561,13 +567,6 @@ header {
     .intro h2 {
       font-size: 1.25em; } }
 @media screen and (min-width: 660px) {
-  header {
-    background: url("../images/bg-yaletown.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; }
-
   .intro {
     padding: 24% 0 12%; }
     .intro h1 {
