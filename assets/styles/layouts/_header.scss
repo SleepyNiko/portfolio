@@ -43,9 +43,6 @@ header {
 		/* Preserve aspet ratio */
 		min-width: 100%;
 		min-height: 100%;
-		
-		background: url('../images/bg-bike.jpg') no-repeat center center;
-		@include background-cover;
   	
 		border-bottom: none;
 		//@include inner-box-shadow; 
@@ -63,7 +60,11 @@ header {
 // Tablet
 @media #{ $break-660 } {
 
-	.header { min-height: 600px; }
+	header { 
+		//max-height: 768px;
+		background: url('../images/bg-yaletown.jpg') no-repeat center center;
+		@include background-cover;
+	}
 
 	.intro { 
 		padding: 24% 0;
@@ -74,9 +75,9 @@ header {
 }
 
 // Desktop
-@media #{ $break-1025 } {
-	header { 
-		background: url('../images/bg-bike.jpg') no-repeat center center fixed;
-		@include background-cover;
-	} 
-}
+// @media #{ $break-1025 } {
+// 	header { 
+// 		background: url('../images/bg-yaletown.jpg') no-repeat center center fixed;
+// 		@include background-cover;
+// 	} 
+// }
