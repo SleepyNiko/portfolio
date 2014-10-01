@@ -246,7 +246,7 @@ p {
 NAVIGATION STYLES
 ******************* */
 .navigation {
-  background: #346b9e;
+  background: rgba(27, 27, 27, 0.85);
   position: relative;
   padding: 1.25%;
   overflow: hidden;
@@ -425,15 +425,27 @@ GALLERY STYLES
   line-height: 1.35em;
   text-align: center; }
 
-.gallery-icon {
-  float: right;
-  position: absolute;
-  right: 5%;
+.gallery-no-link {
   margin-top: 3px;
-  display: inline-block;
-  z-index: 1;
-  color: #ccc;
-  font-size: .75em; }
+  color: #ccc; }
+
+/* FANCY BOX CUSTOM STYLING */
+.fancybox-title {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.95em;
+  text-align: center; }
+
+.fancybox-title-inside-wrap {
+  padding-top: 15px; }
+
+.fancybox-title .caption {
+  padding-right: 0; }
+
+.fancybox-title a {
+  color: #4a4a4a; }
+
+.fancybox-title i {
+  margin-left: 5px; }
 
 @media screen and (min-width: 479px) {
   .gallery article {
@@ -527,7 +539,11 @@ header {
   margin: 0 auto;
   max-height: 300px;
   overflow: hidden;
-  background: #4f9de1;
+  background: url("../images/bg-yaletown.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%; }
 
 .intro {
@@ -552,12 +568,6 @@ header {
     /* Preserve aspet ratio */
     min-width: 100%;
     min-height: 100%;
-    overflow: hidden;
-    background: url("../images/bg-yaletown.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
     border-bottom: none; }
 
   .intro {
@@ -634,7 +644,8 @@ BODY STYLES
 .portfolio-git {
   padding-top: 7%;
   display: block;
-  font-size: .75em; }
+  font-size: .75em;
+  font-weight: 300; }
 
 .portfolio-git a:hover, .portfolio-git i:hover {
   color: #323232;
@@ -664,15 +675,14 @@ BODY STYLES
 @media screen and (min-width: 479px) {
   .portfolio-git {
     padding-top: 5%;
-    font-size: .875em;
+    font-size: .825em;
     -webkit-transition: all 0.2s ease-in-out;
     /* Android 2.1+, Chrome 1-25, iOS 3.2-6.1, Safari 3.2-6  */
     transition: all 0.2s ease-in-out;
     /* Chrome 26, Firefox 16+, iOS 7+, IE 10+, Opera, Safari 6.1+  */ } }
 @media screen and (min-width: 660px) {
   .portfolio-git {
-    padding-top: 3%;
-    font-size: 1em; } }
+    padding-top: 3%; } }
 @media screen and (min-width: 769px) {
   .portfolio-git {
     padding-top: 2.5%; }

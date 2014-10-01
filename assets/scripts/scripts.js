@@ -21,11 +21,24 @@ $(document).ready(function () {
   // Scroll detect functionality
 	$(window).scroll(function() {    
     $(window).scroll(function () {
-        if ($(document).scrollTop() > 500) {
-            $(".navigation").addClass("dark-nav");
-        } else {
-            $(".navigation").removeClass("dark-nav");
-        }
+      if ($(document).scrollTop() > 500) {
+        $(".navigation").addClass("dark-nav");
+      } else {
+        $(".navigation").removeClass("dark-nav");
+      }
     });
 	});
+
+  // FancyBox
+  $(".fancybox").fancybox({
+    openEffect  : 'elastic',
+    closeEffect : 'elastic',
+
+    helpers : {
+      title : {
+        type : 'inside'
+      }
+    }
+  });
+
 });

@@ -70,6 +70,7 @@ BODY STYLES
 	padding-top: 7%; 
 	display: block; 
 	font-size: .75em; 
+	font-weight: 300;
 }
 
 .portfolio-git a:hover, .portfolio-git i:hover { 
@@ -96,7 +97,7 @@ BODY STYLES
 @media #{ $break-479 } {
 	.portfolio-git { 
 		padding-top: 5%; 
-		font-size: .875em; 
+		font-size: .825em; 
 		@include transition;
 	}
 }
@@ -104,7 +105,7 @@ BODY STYLES
 @media #{ $break-660 } {
 	.portfolio-git { 
 		padding-top: 3%;
-		font-size: 1em;
+		//font-size: 1em;
 	}
 }
 
@@ -112,7 +113,6 @@ BODY STYLES
 	.portfolio-git { 
 		padding-top: 2.5%;
 	}
-
 
 	.bubble { padding: 3%; }
 

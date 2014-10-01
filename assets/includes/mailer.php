@@ -20,7 +20,8 @@
       $subject = "Portfolio email from: $name"; // Set the email subject.
 
       // Build the email content.
-      $email_content = "Name: $name\n";
+      $email_content = "Portfolio Email:\n\n"
+      $email_content .= "Name: $name\n";
       $email_content .= "Email: $email\n\n";
       $email_content .= "Message:\n$message\n";
 

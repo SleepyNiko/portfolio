@@ -8,7 +8,9 @@ header {
 	margin: 0 auto;
 	max-height: 300px;
 	overflow: hidden;
-	background: $light-blue-background;
+	//background: $light-blue-background;
+	background: url('../images/bg-yaletown.jpg') no-repeat center center;
+	@include background-cover;
 	width: 100%; 
 }
 	
@@ -43,10 +45,7 @@ header {
 		/* Preserve aspet ratio */
 		min-width: 100%;
 		min-height: 100%;
-		overflow:hidden;
-		background: url('../images/bg-yaletown.jpg') no-repeat center center;
-		@include background-cover;
-
+		
 		border-bottom: none; 
 	}
 
